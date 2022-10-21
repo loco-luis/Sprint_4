@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<title>Votaciones</title>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="Candidatos" content="Opciones de votacion de su preferencia">
+
+	<link rel="stylesheet" th:href="@{/css/bootstrap.css}">
+	<link rel="stylesheet" type="text/css" th:href="@{/css/miEstilo.css}">
+	<script type="text/javascript" th:src="@{/js/BtnVota.js}"></script>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js@latest/dist/Chart.min.js"></script>
+</head>
+
+<body>
+	<div id="cabecera">
+
+		<h1>LLEGO LA HORA DE ELEGIR!!!!</h1>
+		<h2>Pon Tu Granito De Arena Para Mejorar</h2>
+		<img src="img/eleccion.png">
+		<ul>
+			<li>HOME</li>
+			<li>CANDIDATOS</li>
+			<li>PARTIDOS</li>
+			<li>VOTACION</li>
+			<li>HELP</li>
+		</ul>
+
+	</div>
+	<div id="cuerpo">
+		<p>
+			Aunque para muchas caricaturas pasa inadvertida la logística que conlleva para la Registraduría Nacional
+			del Estado Civil la organización de una jornada electoral, dicho procedimiento es de complejidad y abarca
+			varios pasos que, dependiendo del tipo de elección, pueden iniciar hasta con más de un año de antelación.
+			Aquí les brindamos la oportunidad de elegir su mejor prospecto para que hagan realidad sus demandas y el
+			elegido cumpla con lo asignado, ya que está sociedad requiere de un mejor futuro en especial par los mas
+			cortos de edad.
+		</p><br>
+		<table class="table table-bordered">
+			<thead>
+				<th>Gennady Korotkevich</th>
+				<th>Florecita Bonita</th>
+				<th>Patricio Vocablos Chismes</th>
+			</thead>
+			<tr>
+				<td>
+
+					<br><img src="img/candidato1.png" class="estiloImg">
+					<p class="tex">
+						Trabajamos para la inclusion de la tecnologia en todas las clases sociales, disminuyendo la
+						brecha digital e impulsando nuestra sociedad al proceso y al nuevo conocimiento tecnologico.
+						Ya
+						que en estos tiempos, el manejo de la tecnologia es una habilidad fundamental para la
+						sociedad,
+						generando facilidad en los procesos que realizamos durante nuestro día a día.
+					</p>
+
+				</td>
+				<td>
+					<br><img src="img/candidato2.png" class="estiloImg">
+					<p class="tex">
+
+						Movimiento amor es una organización política constituida libremente por estudiantes del UNAB
+						con voluntad política para construir el banco de la alegría donde solo se obtienen
+						risas,nuestro
+						lema es ¡No nos pregunte que tenemos, díganos que necesita!<br><br>
+
+					</p>
+
+				</td>
+				<td>
+					<br><img src="img/candidato3.png" class="estiloImg">
+					<p class="tex">
+
+						Nuestro partido político fue creado para promover la participación de la ciudadanía en la
+						vida
+						democrática y contribuir a la integración de la representación nacional; quienes los
+						conforman,
+						comparten
+						objetivos, intereses, visiones de la realidad, principios, valores y proyectos para ejecutar
+						total o
+						parcialmente en gobiernos democráticos de nuestro país.
+
+					</p>
+				</td>
+			<tr class="estia">
+				<td>
+					<a th:href="@{/candidato1}"> click en imagen
+						<img src="img/logoVinc1.png" class="estImgLog">
+					</a>
+					<button type="button" class="btn btn-outline-success" onclick="javascript: votar(0);">Voto</button>
+				</td>
+				<td>
+					<a th:href="@{/candidato2}">click en imagen
+						<img src="img/LogoVinc2.png" class="estImgLog">
+					</a>
+					<button type="button" class="btn btn-outline-warning" onclick="javascript: votar(1);">Voto</button>
+				</td>
+				<td>
+					<a th:href="@{/Candidato3}">click en imagen
+						<img src="img/logoVinc.png" class="estImgLog">
+					</a>
+					<button type="button" class="btn btn-outline-success" onclick="javascript: votar(2);">Voto</button>
+				</td>
+			</tr>
+			<thead>
+				<th>Marta Cecilia Cabal</th>
+				<th>Sir William Osler</th>
+				<th>Voto en Blanco</th>
+			</thead>
+			<tr class="texto">
+				<td class="alturacel">
+					<br><img src="img/candidato4.png" class="estiloImg">
+					<p class="tex">
+
+						Marta Cecilia Cabal es una empresaria, politóloga y política colombiana. En las elecciones
+						legislativas de 2011 fue elegida representante al senado con el aval del partido politico
+						trabajemos por la paz, y en 2018 fue elegida como presidente de la república por la misma
+						colectividad
+
+					</p>
+
+				</td>
+				<td>
+					<br><img src="img/candidato5.png" class="estiloImg">
+					<p class="tex">
+						Con mi experiencia en la medicina se crearán planes medicionales y de eduación sexual que
+						abarque todas las clases sociales, con el fin de disminuir la sobre-población y el avance de
+						enfermades mortales; de igual forma se implementarán tecnologías de vanguardia en hospitales
+						a los cuales tendrán acceso cualquier habitante.
+					</p>
+
+				</td>
+				<td>
+					<br><img src="img/voto en blanco.webp" style="width: 200px;height: 300px;">
+				</td>
+			</tr>
+			<tr class="estia">
+				<td>
+					<a th:href="@{Candidato_4}">click en imagen
+						<img src="img/LogoVinc4.png" class="estImgLog">
+					</a>
+					<button type="button" class="btn btn-outline-warning" onclick="javascript: votar(3);">Voto</button>
+				</td>
+				<td>
+					<a th:href="@{Candidato_5}">click en imagen
+						<img src="img/LogoVinc5.png" class="estImgLog">
+					</a>
+					<button type="button" class="btn btn-outline-success" onclick="javascript: votar(4);">Voto</button>
+				</td>
+				<td>
+					<button type="button" class="btn btn-outline-warning" onclick="javascript: votar(5);">Voto</button>
+				</td>
+			</tr>
+
+
+		</table><br>
+	</div>
+	<div id="info">
+		<h3>INFORMACION SOBRE EL EVENTO</h3>
+		<h2>ESTADISTICAS</h2>
+		<img src="img/estadistica.png" class="estiloImg">
+		<p>
+			Si no cuneta con un lugar tecnologico para realizar su votacion puede acercarse a:
+
+		<ul>
+			<li>C.C la principal</li>
+			<li>Arrollos del dia</li>
+			<li>Tecnopresencia</li>
+			<li>C.C el soñador</li>
+			<li>Parqueadero ferias y eventos</li>
+			<li>la esquina cibernetica</li>
+			<li>C.C las 8 vueltas</li>
+			<li>C.C cielo abierto</li>
+			<li>Garaje de la abuela</li>
+			<li>Parque de eventos</li>
+			<li>C.C las Palmas</li>
+			<li>Su punto tecnologico de confianza</li>
+		</ul>
+		</p>
+		<!--<canvas id="grafica" width="300" height="200"></canvas>-->
+		<img src="img/estadistica.png" class="estiloImg"><br>
+		<table>
+			<tr>
+				<td>
+					<button id="clear" type="button" class="btn btn-outline-primary"
+						onclick="javascript: estadistica();">Resultados Consolidados</button>
+					<button id="limp" type="button" class="btn btn-outline-danger"
+						onclick="javascript: estadistica();">Resultados por Regiones </button>
+					<button id="vaciar" type="button" class="btn btn-outline-warning"
+						onclick="javascript: estadistica();">Resultados por Ciudades </button>
+				</td>
+			</tr>
+		</table><br><br>
+		<div id="conEst"></div><br>
+		<canvas id="grafica" width="300" height="200"></canvas>
+	</div><br>
+
+	<div id="pie">
+		<table>
+			<tr>
+				<td class="tbl1">
+					<img src="img/LogoUnab-Horizontal.png" class="estImgLog1">
+
+				</td>
+				<td>
+					<p>
+						Este es el Sprint4 realizado por Edwar Rene Roa Villamarin, Jorge Ernesto Quinche Bernavides,
+						Camilo Andres
+						Ortiz Bernal, Miguel angel Gomez Morales y Luis Alejandro Lizarazo Arteaga, bajo la guia del
+						tutor Miguel
+						Angel
+						perez siguiendo los lineamentos para la presentacion del proyecto.
+						Agradecemos el esfuezo que realizan en Mision TIC de la UNAB para sacarnos adelante.
+					</p>
+
+				</td>
+			</tr>
+
+		</table>
+
+	</div>
+
+</body>
+
+</html>

@@ -1,0 +1,97 @@
+body{
+    width: 90%;
+    margin: 5px auto;
+    padding: 10px auto;
+    background-color:rgba(255,255,0,0.4);
+}
+.texto{
+    font-family:'Comic Sans MS';
+    color: #63890B;
+    text-align: justify;
+    font-size: medium;
+    text-shadow: 10px 8px 5px gray;
+}
+.estiimg{
+    width: 350px;
+    height: 300px;
+}
+.redes{
+    color: white;
+   
+}
+
+
+.autor{
+    
+    text-align: right;
+    color: #63890B;
+}
+a:link{
+    color: purple;
+}
+
+a:visited{
+    color: red;
+}
+a:hover{
+    color: cyan;
+}
+.tiEnca{
+    color: #024A86;
+    font-family: "Comic Sans MS";
+    font-size: 25px;
+    text-shadow: 8px 5px 5px gray;
+    
+
+}
+header{
+    background-color: aquamarine;
+
+}
+.tex1{
+    color: #05F708;
+    font-size:300%;
+    text-align: center;
+    text-shadow: -8px 5px 10px gray;
+}
+.tbl1{
+    border-top: 2px dotted green;
+  border-bottom: 2px dotted green;
+  border-right: 2px dotted green;
+  border-left: 2px dotted green;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    box-shadow: 0px 0px 30px blue;
+    
+}
+hr{
+    border-width:1px;
+    border-style:dashed;
+    border-color:blue;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#hr1{
+    border-width:1px;
+    border-style:dashed;
+    border-color:blue;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.tbl2{
+    border-top: 2px dotted green;
+  border-bottom: 2px dotted green;
+  border-right: 2px dotted green;
+  border-left: 2px dotted green;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    box-shadow: 7px 9px 15px black inset;    
+}
+.th1{
+ background-color: white;   
+}
+

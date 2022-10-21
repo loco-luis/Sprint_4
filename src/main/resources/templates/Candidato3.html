@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+
+<head>
+    <title>Libre Expresion</title>
+    <meta charset="UTF-8">
+    <meta name="Partido Politico" content="Hablar para un mejor futuro">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/miEstilo.css}">
+
+</head>
+<style type="text/css">
+    .logo {
+        margin: 5px;
+        padding: auto;
+        width: 70px;
+        vertical-align: middle;
+    }
+
+    #logEnca ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    #logEnca li {
+        float: right;
+        padding: 5px 5px;
+        text-align: center;
+        color: beige;
+        background-color: darkgray;
+    }
+
+    #logEnca {
+        margin: auto;
+        position: relative;
+        left: 10px;
+        top: 10px;
+        height: 115px;
+        background-color: beige;
+        color: #53C130;
+
+    }
+
+    #logEnc p {
+        float: left;
+    }
+
+    table {
+        position: relative;
+        top: 30px;
+        width: 90%;
+        margin: auto;
+        background-color: #54D34B;
+
+    }
+
+    #logoInd {
+        position: fixed;
+        bottom: 100px;
+        right: 0;
+        width: 300px;
+        
+
+    }
+
+    #cuerpo {
+        float: left;
+        width: 65%;
+    }
+
+    #cuerpo h2 {
+        color: "#53C130";
+    }
+
+    #info {
+        margin: 30px;
+        padding: 2px;
+        float: right;
+        width: 25%;
+        color: #54D34B;
+
+    }
+
+    img {
+        width: 250px;
+        margin: 10px;
+    }
+
+    #pie {
+        left: 10px;
+        top: 0px;
+        height: 115px;
+        border-style: solid;
+        background-color: beige;
+        color: #53C130;
+    }
+</style>
+
+<body>
+    <a name= "inicio"></a>
+    <div id="logEnca">
+        <p><img src="img/logo.jpg" class="logo"> LIBRE EXPRESION</p>
+        <ul>
+            <li>Ayuda</li>
+            <li>Politicas</li>
+            <li>Historia</li>
+            <li>Votacion</li>
+            <li>Hogar</li>
+        </ul>
+    </div>
+
+    <br>
+    <table>
+        <tr>
+            <td>
+                <img src="img/candidato3.png">
+            </td>
+            <td style="text-align: center;">
+                <h1>LIBRE EXPRESION</h1>
+                <h2>Hablaremos para un mejor futuro</h2>
+            </td>
+            <td>
+                <img src="img/PartPolitico.jpg" style="display:block;float: right;">
+
+            </td>
+        </tr>
+    </table><br>
+    <div id="logoInd"><a href="Index.html"><img src="img/eleccion.png" class="logo">Regresa a votacion</a></div>
+
+    <div id="cuerpo">
+
+        <h2>Esta Es La Idea</h2>
+
+        <p align="justify">
+            <font color="C93F21" size="5" face="times roman">
+                Nuestro partido político fue creado para promover la participación de la ciudadanía en la vida
+                democrática y
+                contribuir a la integración de la representación nacional; quienes los conforman, comparten objetivos,
+                intereses, visiones de la realidad, principios, valores y proyectos para ejecutar total o parcialmente
+                en
+                gobiernos democráticos de nuestro país.
+            </font>
+        </p>
+        <center><img src="img/img1.jpg"></center><br>
+
+        <ul>
+            <font color="C93F21" size="5" face="times roman">
+                <li>Nos caracterizamos por escuchar.</li>
+                <li>Las palabras son la fuerza del pueblo.</li>
+                <li>El objetivo es cumplir lo dicho.</li>
+                <li>Hablemos y construyamos un futuro.</li>
+                <li>Ellos nos dicen, nosostros escuchamos.</li>
+            </font>
+        </ul>
+        <img src="img/img2.jpg">
+
+
+    </div>
+    <div id="info">
+
+        <img src="img/Encuesta.jpg">
+
+        <h3> Opiniones sobre el partido</h3>
+        <p>
+            Los caricaturas estan indicando el prblema relacionado con todo lo que prometen los politicos
+            y no dan una buena solucion, muchos partidarios estan a favor de los indicado por el candidato
+            pero por otro lado los menos afortunados que no los acoje estos beneficios se esta incrementando sus números
+            y cabe laposibiidad que se retiren del seguimiento por el partido.
+
+
+        </p>
+
+    </div>
+    <hr width="90%"><br>
+
+
+    <a href="Candidato3.html#inicio" style="display: block;clear: both;text-align: center;">SUBIR</a><br>
+
+    <hr width="90%"><br>
+    <div id="pie">
+
+        <img src="img/logo.jpg" class="logo">LIBRE EXPRESION
+        <p style="text-align: right; color:black">Creado por Luis Lizarazo</p>
+    </div>
+
+</body>
+
+</html>
