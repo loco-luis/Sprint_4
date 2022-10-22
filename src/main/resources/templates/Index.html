@@ -139,13 +139,13 @@
 			</tr>
 			<tr class="estia">
 				<td>
-					<a th:href="@{Candidato_4}">click en imagen
+					<a th:href="@{/Candidato_4}">click en imagen
 						<img src="img/LogoVinc4.png" class="estImgLog">
 					</a>
 					<button type="button" class="btn btn-outline-warning" onclick="javascript: votar(3);">Voto</button>
 				</td>
 				<td>
-					<a th:href="@{Candidato_5}">click en imagen
+					<a th:href="@{/Candidato_5}">click en imagen
 						<img src="img/LogoVinc5.png" class="estImgLog">
 					</a>
 					<button type="button" class="btn btn-outline-success" onclick="javascript: votar(4);">Voto</button>
@@ -180,17 +180,15 @@
 			<li>Su punto tecnologico de confianza</li>
 		</ul>
 		</p>
-		<!--<canvas id="grafica" width="300" height="200"></canvas>-->
 		<img src="img/estadistica.png" class="estiloImg"><br>
 		<table>
 			<tr>
 				<td>
 					<button id="clear" type="button" class="btn btn-outline-primary"
 						onclick="javascript: estadistica();">Resultados Consolidados</button>
-					<button id="limp" type="button" class="btn btn-outline-danger"
-						onclick="javascript: estadistica();">Resultados por Regiones </button>
-					<button id="vaciar" type="button" class="btn btn-outline-warning"
-						onclick="javascript: estadistica();">Resultados por Ciudades </button>
+					<a th:href="@{/listaVotante}"><button id="limp" type="button"
+							class="btn btn-outline-danger">Registro datos Votante </button></a>
+					<button id="vaciar" type="button" class="btn btn-outline-warning">Resultados por Ciudades </button>
 				</td>
 			</tr>
 		</table><br><br>

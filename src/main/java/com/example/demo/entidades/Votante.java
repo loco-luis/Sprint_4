@@ -1,7 +1,11 @@
 package com.example.demo.entidades;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
 public class Votante {
-	
+	@Id
 	private int codVotante;
 	private int identificacion;
 	private String nombres;

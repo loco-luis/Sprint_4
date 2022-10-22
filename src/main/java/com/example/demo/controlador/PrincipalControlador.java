@@ -31,4 +31,8 @@ public class PrincipalControlador {
 	public String partido5() {
 		return "/Candidato_5";
 	}
+	@GetMapping("/addVotante")
+	public String Registrar() {
+		return "/addVotante";
+	}
 }

@@ -1,0 +1,105 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+
+<head>
+	<title>Registrar Votante</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" th:href="@{/css/miEstilo.css}">
+	<link rel="stylesheet" th:href="@{/css/bootstrap.css}">
+</head>
+
+<body>
+	<div id="formReg">
+		<h2>Registrar Votante</h2><br>
+		<form name="Datos" th:action="@{/saveVotante}" method="post" th:object=${votantes}>
+			<div class="mb-3">
+				<label for="labidentificacion" class="form-label">Identificacion:</label>
+				<input type="number" class="form-control" name="identificacion" id="identificacion"
+					aria-describedby="identificacionHelp" required>
+				<div id="identificacionHelp" class="form-text">Digite el número identificación</div>
+			</div>
+			<div class="mb-3">
+				<label for="labnombres" class="form-label">Nombres:</label>
+				<input type="text" class="form-control" name="nombres" id="nombres" aria-describedby="nombresHelp"
+					required>
+				<div id="nombresHelp" class="form-text">Digite los nombres</div>
+			</div>
+			<div class="mb-3">
+				<label for="labnombres" class="form-label">Apellidos:</label>
+				<input type="text" class="form-control" name="apellidos" id="apellidos" aria-describedby="nombresHelp"
+					required>
+				<div id="nombresHelp" class="form-text">Digite los apellidos</div>
+			</div>
+			<label for="sexo" class="form-label">Sexo:</label><br>
+			<div class="form-check">
+				<input class="form-check-input" type="radio" name="sexo" id="sexo" value="1" checked>
+				<label class="form-check-label" for="sexo">
+					Femenimo
+				</label>
+			</div>
+			<div class="form-check">
+				<input class="form-check-input" type="radio" name="sexo" id="sexo" value="2">
+				<label class="form-check-label" for="flexRadioDefault2">
+					Masculino
+				</label>
+			</div>
+			<div id="nombresHelp" class="form-text">Seleccione el sexo</div><br>
+			<div class="mb-3">
+				<label for="labnombres" class="form-label">Fecha de Nacimiento:</label>
+				<input type="date" class="form-control" name="fechaNac" id="fechaNac" aria-describedby="nombresHelp"
+					required>
+				<div id="nombresHelp" class="form-text">Seleccione la Fecha de Nacimiento</div>
+			</div>
+			<div class="mb-3">
+				<label for="labnombres" class="form-label">Fecha de Expedición:</label>
+				<input type="date" class="form-control" name="fechaExp" id="fechaExp" aria-describedby="nombresHelp"
+					required>
+				<div id="nombresHelp" class="form-text">Seleccione la Fecha de expedición de la cédula</div>
+			</div>
+			<div class="mb-3">
+				<label for="labnombres" class="form-label">Lugar de Nacimiento:</label>
+				<select class="form-select" aria-label="Default select example">
+					<option value="1">Bógota D.C</option>
+					<option value="2">Barranquilla</option>
+					<option value="3">Bucaramanga</option>
+					<option value="4">Calí</option>
+					<option value="5">Cartagena</option>
+					<option value="6">Cúcuta</option>
+					<option value="7">Medellín</option>
+					<option value="8">Santa Marta</option>
+				</select>
+				<div id="nombresHelp" class="form-text">Seleccione el lugar de Nacimiento</div>
+			</div>
+			<div class="mb-3">
+				<label for="labnombres" class="form-label">Lugar de Residencia:</label>
+				<select class="form-select" aria-label="Default select example">
+					<option value="1">Bógota D.C</option>
+					<option value="2">Barranquilla</option>
+					<option value="3">Bucaramanga</option>
+					<option value="4">Calí</option>
+					<option value="5">Cartagena</option>
+					<option value="6">Cúcuta</option>
+					<option value="7">Medellín</option>
+					<option value="8">Santa Marta</option>
+				</select>
+				<div id="nombresHelp" class="form-text">Seleccione el lugar de residencia</div>
+			</div>
+			<div class="mb-3">
+				<label for="labnombres" class="form-label">Teléfono:</label>
+				<input type="number" class="form-control" name="telefono" id="telefono" aria-describedby="nombresHelp"
+					required>
+				<div id="nombresHelp" class="form-text">Digite número teléfonico</div>
+			</div>
+			<div class="mb-3">
+				<label for="labnombres" class="form-label">Correo:</label>
+				<input type="email" class="form-control" name="correo" id="correo" aria-describedby="nombresHelp"
+					required>
+				<div id="nombresHelp" class="form-text">Digite el Correo Electrónico</div>
+			</div>
+			<button type="submit" class="btn btn-outline-secondary">Agregar</button>
+		</form>
+	</div>
+</body>
+
+</html>

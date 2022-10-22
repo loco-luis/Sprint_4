@@ -1,0 +1,46 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+
+<head>
+	<title>Lista votantes</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" th:href="@{/css/bootstrap.css}">
+	<link rel="stylesheet" type="text/css" th:href="@{/css/miEstilo.css}">
+</head>
+
+<body>
+	<div id="conTable">
+		<center>
+			<a th:href="@{/nuevoVotante}"><button type="button" class="btn btn-secondary">Registrar
+					Votante</button></a><br><br>
+		</center>
+		<br>
+		<table class="table table-striped">
+			<tr>
+				<td></td>
+				<td class="titulo">Identificación</td>
+				<td class="titulo">Nombres</td>
+				<td class="titulo">Correo</td>
+			</tr>
+			<tr th:each="votante:${votantes}">
+				<td>
+					<font th:text=${votante.codVotante}></font>
+				</td>
+				<td class="textoTab">
+					<font th:text=${votante.identificacion}></font>
+				</td>
+				<td class="textoTab">
+					<font th:text=${votante.nombres}></font>
+				</td>
+				<td class="textoTab">
+					<font th:text=${votante.correo}></font>
+				</td>
+			</tr>
+
+
+		</table>
+	</div>
+</body>
+
+</html>
