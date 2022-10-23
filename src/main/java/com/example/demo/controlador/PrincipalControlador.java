@@ -35,4 +35,5 @@ public class PrincipalControlador {
 	public String Registrar() {
 		return "/addVotante";
 	}
+	
 }

@@ -25,9 +25,9 @@
 			</tr>
 			<tr th:each="votante:${votantes}">
 				<td>
-					<img src="img/mostrar.png"class="Iconos">
-					<img src="img/editar.png"class="Iconos">
-					<img src="img/eliminar.jpg"class="Iconos">
+					<a th:href="@{/mostrarInfo}+${votante.identificacion}"><img src="img/mostrar.png" class="Iconos"></a>
+					<img src="img/editar.png" class="Iconos">
+					<img src="img/eliminar.jpg" class="Iconos">
 				</td>
 				<td class="textoTab">
 					<font th:text=${votante.identificacion}></font>
