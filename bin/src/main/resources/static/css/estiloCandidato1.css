@@ -1,0 +1,53 @@
+body{
+    background-image: url(../img/fondoI.png);
+}
+#conten{
+    margin: 5%; 
+    background-color: beige;
+}
+#encabezado{
+    text-align: center;
+}
+#encabezado h1{
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bold;
+    color: #024A86;
+    font-size: 40px;
+}
+#encabezado img{
+    margin: auto;
+    padding: auto;
+}
+
+#cuerpo{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+    text-align: justify;
+}
+#cuerpo img{
+    display: block;
+    width: 50%;
+    height: 100%;
+    margin: auto;
+    padding-top: 10px;
+}
+#cuerpo p{
+    margin: auto;
+}
+li{
+    list-style:decimal;
+}
+div#redireccion{
+    text-align: center;
+}
+#logoHeader{
+    padding: 0;
+    margin: 0;
+}
+#logoHeader img{
+    width: 100%;
+}
+#textoHeader{
+    padding-left: 0;
+    margin-left: 0;
+}

@@ -123,24 +123,3 @@ body {
     margin: 2px;
     padding: 0;
 }
-#formReg, #conTable {
-	margin: 5px auto;
-    width: 65% ;
-    padding:10px auto;
-}
-.textoTab{
-	text-align: center;
-	font-family: verdana;
-	font-size: 14px;
-}
-.titulo{
-	text-align: center;
-	font-family: verdana;
-	font-size: 20px;
-}
-.Iconos {
-    margin: 2px;
-    width: 20px;
-    height: 20px;
-    text-align: center;
-}

@@ -1,18 +1,14 @@
 <!DOCTYPE html>
-<html lang="es" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
-    xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3"
-    xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
-
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta charset="utf-8" content="Sistema de votaciones en línea, vote por su candidato de preferencia">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" th:href="@{/css/bootstrap.css}">
-    <link rel="stylesheet" type="text/css" th:href="@{css/estiloCandidato1.css}">
+    <link rel="stylesheet" href="bootstrap-5.2.1-dist/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/estiloCandidato1.css">
     <title>Gennady Korotkevich</title>
 </head>
-
 <body id="conten">
     <!-- 4. Crear la Página de los partidos -->
     <div id="header" class="container tex-center">
@@ -46,7 +42,7 @@
         <ul>
             <li>
                 Teletrabajo, rompiendo la necesidad de una infraestructura fisica para las empresas,
-                permitiendo que se realicen tareas laborales desde cualquier lugar.
+                    permitiendo que se realicen tareas laborales desde cualquier lugar.
             </li>
             <li>Educación a remota, permitiendo a las instituciones educativas trabajar de manera correcta
                 la educación remota, con todas las herramientas necesarias para que la educación se mantenga de
@@ -62,9 +58,8 @@
         </ul>
     </div>
     <div id="redireccion">
-        <a th:href="@{/appVotaciones}" class="btn btn-danger">Regresar</a>
-        <a th:href="@{/candidato2}" class="btn btn-danger">Siguiente</a>
+        <a href="Index.html" class="btn btn-danger">Regresar</a>
+        <a href="candidato2.html" class="btn btn-danger">Siguiente</a>
     </div>
 </body>
-
 </html>

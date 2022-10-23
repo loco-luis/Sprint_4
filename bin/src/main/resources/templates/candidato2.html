@@ -1,14 +1,12 @@
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
-xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3"
-xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<html>
 
 <head>
     <title>votApp v.10</title>
     <meta charset="utf-8" content="Sistema de votaciones en línea, vote por su candidato de preferencia">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" th:href="@{/css/bootstrap.css}">
-    <link rel="stylesheet" type="text/css" th:href="@{/css/estiloCandidato2.css}">
+    <link rel="stylesheet" href="bootstrap-5.2.1-dist/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/estiloCandidato2.css">
 </head>
 
 <body id="conten">
@@ -42,8 +40,8 @@ xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
     </p>
 </div>
 <div id="redireccion">
-    <a th:href="@{appVotantes}" class="btn btn-danger">Regresar</a>
-    <a th:href="@{/inicio}" class="btn btn-danger">Siguiente</a>
+    <a href="Index.html" class="btn btn-danger">Regresar</a>
+    <a href="Candidato3.html" class="btn btn-danger">Siguiente</a>
 </div>    
 </body>
 </html>
